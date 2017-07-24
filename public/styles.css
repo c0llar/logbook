@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant:400,700|Open+Sans:300,400,400i,600i&subset=cyrillic');
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+/* LOGIN  */
+.login {
+  padding-top: 40vh;
+  margin: auto;
+  text-align: center;
+  width: 20vw;
+}
+
+.login__greetings {
+  font-family: 'Cormorant', serif;
+  font-size: 4vh;
+}
+
+.login input {
+  border: none;
+  width: 20vw;
+  text-align: center;
+  border-bottom: solid black 1px;
+}
+
+.login input:focus {
+  border: none;
+  outline: none;
+  border-bottom: solid red 2px;
+}
+
+
+/* APP  */
+
+.app {
+  font-family: 'Open Sans', sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+
+  padding-top: 1vh;
+  height: 99vh;
+}
+
+.app__controls {
+  font-family: 'Cormorant', serif;
+  /* font-weight: bold; */
+  font-size: 7vh;
+
+  text-orientation: sideways-right;
+  writing-mode: vertical-lr;
+  order: 2;
+
+  width: 100px;
+}
+
+.app__controls__navlink {
+  text-decoration: none;
+  color: red;
+}
+
+.app__controls__logout {
+  font-size: 3vh;
+}
+
+.app__controls__offline {
+  font-size: 3vh;
+  margin-top: 9vh;
+  color: grey;
+}
+
+/* NOTES  */
+
+.notes {
+  order: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* align-items: flex-start; */
+
+  width: 400px;
+}
+
+.notes__note-list {
+  order: 1;
+
+  font-size: 1.8vh;
+  width: 60vw;
+  margin: 5px;
+
+  overflow-y: scroll;
+}
+
+.notes__note-list::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+	background-color: #FFFFFF;
+}
+
+.notes__note-list::-webkit-scrollbar {
+	width: 5px;
+	background-color: #FFFFFF;
+}
+
+.notes__note-list::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
+.notes__note-list__new-note {
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.notes__note-list__search {
+  margin-bottom: 10px;
+}
+
+.notes__note-list__note {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+
+.notes__note-list__note textarea {
+  border: none;
+
+  resize: none;
+  width: 98%;
+  height: 9vh;
+
+  border-bottom: solid black 1px;
+
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.notes__note-list__note textarea:focus {
+  border: none;
+  outline: none;
+  border-bottom: solid red 2px;
+}
+
+.notes__note-list input {
+  width: 98% !important;
+
+  border: none;
+  width: 20vw;
+  border-bottom: solid black 1px;
+
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.notes__note-list input:focus {
+  border: none;
+  outline: none;
+  border-bottom: solid red 2px;
+}
+
+.notes__note-list__note__title {
+  font-family: 'Cormorant', serif;
+  font-size: 3vh;
+
+  overflow-wrap: break-word;
+}
+
+.notes__note-list__note__title__date {
+  font-style: italic;
+  text-align: right;
+}
+
+.notes__note-list__note__title__button {
+  text-align: left;
+  margin-left: 7px;
+  font-size: 2vh;
+}
+
+.notes__note-list__note__text {
+}
+
+/* SIDEBAR */
+
+.notes__sidebar {
+  order: 2;
+
+  font-size: 1.8vh;
+  width: 15vw;
+}
+
+@media (max-width: 550px) {
+  .notes__sidebar {
+    /* background-color: lightgreen; */
+    display: none;
+  }
+}
+
+.notes__sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.notes__sidebar__date {
+  font-weight: lighter;
+}
+
+.notes__sidebar__date_no-notes {
+  color: #c1c1c1;
+}
+
+.notes__sidebar__date_selected {
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+}
+
+/* CALENDAR */
+
+.calendar {
+  order: 1;
+  width: 400px;
+}
+
+.calendar a {
+  text-decoration: none;
+  color: black;
+}
+
+.calendar__header {
+  font-family: 'Cormorant', serif;
+  font-size: 5vh;
+
+  text-align: center;
+}
+
+.calendar__header__selected-year {
+  font-size: 7vh;
+}
+
+.calendar__months {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: stretch;
+
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.calendar__month {
+  order: 1;
+  width: 100px;
+}
+
+/* FOOTER */
+
+.footer {
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
